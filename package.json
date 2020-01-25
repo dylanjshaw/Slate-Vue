@@ -33,7 +33,7 @@
     "terser": "^3.17.0"
   },
   "dependencies": {
-    "@intera/vue-zoom-on-hover": "github:dylanjshaw/vue-zoom-on-hover#master",
+    "@intera/vue-zoom-on-hover": "dylanjshaw/vue-zoom-on-hover#master",
     "@shopify/theme-a11y": "^1.0.1",
     "@shopify/theme-cart": "^1.0.1",
     "@shopify/theme-currency": "^1.0.0-alpha.7",
