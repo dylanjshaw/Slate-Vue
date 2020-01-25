@@ -1,2 +1,17 @@
-{{ content_for_index }}
+<div id="app-index">
+    <index-template>
+        {{ content_for_index }}
+    </index-template>
+</div>
 
+
+<div class="article-test">
+
+    {% for article in blog.articles %}
+
+        <p>{{ article }}</p>
+
+    {% endfor %}
+
+
+</div>

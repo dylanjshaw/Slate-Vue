@@ -18,6 +18,8 @@
     "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@shopify/slate-tools": "1.0.0-beta.14",
+    "@storybook/addon-knobs": "^5.1.11",
+    "@storybook/addon-notes": "^5.1.11",
     "babel-preset-react": "^6.24.1",
     "babel-preset-shopify": "^16.2.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -31,6 +33,7 @@
     "terser": "^3.17.0"
   },
   "dependencies": {
+    "@intera/vue-zoom-on-hover": "github:dylanjshaw/vue-zoom-on-hover#master",
     "@shopify/theme-a11y": "^1.0.1",
     "@shopify/theme-cart": "^1.0.1",
     "@shopify/theme-currency": "^1.0.0-alpha.7",
@@ -38,6 +41,7 @@
     "@shopify/theme-rte": "^1.0.0-alpha.7",
     "@shopify/theme-sections": "^1.1.0",
     "@shopify/theme-variants": "^1.0.0-alpha.8",
+    "@storybook/vue": "^5.1.11",
     "apollo-boost": "^0.1.23",
     "apollo-cache-inmemory": "^1.4.2",
     "apollo-link": "^1.2.6",
@@ -48,17 +52,18 @@
     "flickity-fullscreen": "^1.1.1",
     "flickity-hash": "^1.0.3",
     "flickity-imagesloaded": "^2.0.0",
-    "glob": "^7.1.3",
-    "graphql": "^14.1.0",
+    "glob": "^7.1.4",
+    "graphql": "^14.5.3",
+    "graphql-request": "^1.8.2",
     "graphql-resolvers": "^0.3.2",
     "graphql-tag": "^2.10.1",
     "is-base64": "^0.1.0",
     "lazysizes": "^4.1.5",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "lodash.clonedeep": "^4.5.0",
     "lodash.differencewith": "^4.5.0",
     "lodash.isequal": "^4.5.0",
-    "lodash.merge": "^4.6.1",
+    "lodash.merge": "^4.6.2",
     "lodash.uniqby": "^4.7.0",
     "lodash.uniqwith": "^4.5.0",
     "normalize.css": "^7.0.0",
@@ -67,6 +72,11 @@
     "react-apollo": "^2.3.3",
     "react-dom": "^16.7.0",
     "react-select": "^2.3.0",
+    "shopify-buy": "^2.6.1",
+    "vue": "^2.6.10",
+    "vue-gql": "^0.2.3",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
     "webpack-merge-and-include-globally": "^2.1.16"
   },
   "scripts": {
@@ -77,6 +87,7 @@
     "deploy": "slate-tools build && slate-tools deploy",
     "zip": "slate-tools build && slate-tools zip",
     "lint": "slate-tools lint",
-    "format": "slate-tools format"
+    "format": "slate-tools format",
+    "storybook": "start-storybook -p 6006 -s public"
   }
 }
